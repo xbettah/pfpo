@@ -1,0 +1,264 @@
+JAVAC=javac
+
+JAVA=java
+
+
+lsJAR=jar
+
+OPCIONES= -Xlint -encoding ISO-8859-1 -classpath ./bin  -cp ./bin -d ./bin
+
+
+
+
+#############################
+# Agenda.java
+#############################
+./bin/fp2/poo/pfpooadrdelvil1/Agenda.class: \
+                       ./bin/fp2/poo/utilidades/Excepciones/OperacionNoPermitidaExcepcion.class \
+                       ./bin/fp2/poo/utilidades/Excepciones/TelefonoIncorrectoExcepcion.class \
+                       ./bin/fp2/poo/utilidades/DatosDeEntrada.class \
+                       ./bin/fp2/poo/utilidades/ContactoInterfaz.class \
+                       ./bin/fp2/poo/utilidades/TelefonoInterfaz.class \
+                       ./bin/fp2/poo/utilidades/PersonaInterfaz.class \
+                      ./bin/fp2/poo/utilidades/DomicilioInterfaz.class \
+                       ./bin/fp2/poo/utilidades/CorreoElectronicoInterfaz.class \
+                       ./bin/fp2/poo/pfpooadrdelvil1/OrdenacionNombre.class   \
+			./bin/fp2/poo/pfpooadrdelvil1/OrdenacionCorreo.class   \
+                       ./bin/fp2/poo/utilidades/AgendaAbstracta.class \
+                       ./src/fp2/poo/pfpooadrdelvil1/Agenda.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/pfpooadrdelvil1/Agenda.java
+	
+	
+#############################
+# OrdenacionNombre.java
+#  
+############################# 
+./bin/fp2/poo/pfpooadrdelvil1/OrdenacionNombre.class:  ./bin/fp2/poo/utilidades/ContactoInterfaz.class \
+                                                ./src/fp2/poo/pfpooadrdelvil1/OrdenacionNombre.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/pfpooadrdelvil1/OrdenacionNombre.java
+
+#############################
+# OrdenacionCorreo.java
+#  
+############################# 
+
+./bin/fp2/poo/pfpooadrdelvil1/OrdenacionCorreo.class:  ./bin/fp2/poo/utilidades/ContactoInterfaz.class \
+                                                ./src/fp2/poo/pfpooadrdelvil1/OrdenacionCorreo.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/pfpooadrdelvil1/OrdenacionCorreo.java
+
+
+#############################
+# DatosDeEntrada.java
+#############################
+./bin/fp2/poo/utilidades/DatosDeEntrada.class:                                                         \
+                       ./bin/fp2/poo/pfpooadrdelvil1/Contacto.class                                         \
+                       ./bin/fp2/poo/pfpooadrdelvil1/Domicilio.class                                        \
+                       ./bin/fp2/poo/utilidades/ContactoInterfaz.class       \
+                       ./bin/fp2/poo/pfpooadrdelvil1/CorreoElectronico.class                                \
+                       ./bin/fp2/poo/pfpooadrdelvil1/Persona.class                                          \
+                       ./bin/fp2/poo/pfpooadrdelvil1/Telefono.class                                         \
+                       ./bin/fp2/poo/utilidades/AgendaAbstracta.class \
+                       ./bin/fp2/poo/utilidades/Excepciones/TelefonoIncorrectoExcepcion.class          \
+                       ./bin/fp2/poo/utilidades/Excepciones/CorreoElectronicoIncorrectoExcepcion.class \
+                       ./bin/fp2/poo/utilidades/Excepciones/OperacionNoPermitidaExcepcion.class        \
+                       ./src/fp2/poo/utilidades/DatosDeEntrada.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/utilidades/DatosDeEntrada.java
+
+
+	
+#############################
+# Contacto.java
+#############################
+
+./bin/fp2/poo/pfpooadrdelvil1/Contacto.class: \
+                       ./bin/fp2/poo/utilidades/TelefonoInterfaz.class \
+                       ./bin/fp2/poo/utilidades/PersonaInterfaz.class \
+                      ./bin/fp2/poo/utilidades/DomicilioInterfaz.class \
+                       ./bin/fp2/poo/utilidades/CorreoElectronicoInterfaz.class \
+                       ./bin/fp2/poo/utilidades/ContactoInterfaz.class \
+                       ./src/fp2/poo/pfpooadrdelvil1/Contacto.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/pfpooadrdelvil1/Contacto.java
+
+
+#############################
+# Domicilio.java
+#############################
+
+./bin/fp2/poo/pfpooadrdelvil1/CorreoElectronico.class: \
+                       ./bin/fp2/poo/utilidades/Excepciones/CorreoElectronicoIncorrectoExcepcion.class \
+                       ./bin/fp2/poo/utilidades/CorreoElectronicoInterfaz.class \
+                       ./src/fp2/poo/pfpooadrdelvil1/CorreoElectronico.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/pfpooadrdelvil1/CorreoElectronico.java
+	
+#############################
+# Domicilio.java
+#############################
+
+./bin/fp2/poo/pfpooadrdelvil1/Domicilio.class: \
+                       ./bin/fp2/poo/utilidades/DomicilioInterfaz.class \
+                       ./src/fp2/poo/pfpooadrdelvil1/Domicilio.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/pfpooadrdelvil1/Domicilio.java
+	
+#############################
+# Persona.java
+#############################
+
+./bin/fp2/poo/pfpooadrdelvil1/Persona.class: \
+                       ./bin/fp2/poo/utilidades/PersonaInterfaz.class \
+                       ./src/fp2/poo/pfpooadrdelvil1/Persona.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/pfpooadrdelvil1/Persona.java
+
+
+#############################
+# Telefono.java
+#############################
+
+./bin/fp2/poo/pfpooadrdelvil1/Telefono.class: \
+                       ./bin/fp2/poo/utilidades/TelefonoInterfaz.class \
+                       ./bin/fp2/poo/utilidades/Excepciones/TelefonoIncorrectoExcepcion.class \
+                       ./src/fp2/poo/pfpooadrdelvil1/Telefono.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/pfpooadrdelvil1/Telefono.java
+
+
+
+
+#############################
+# AgendaAbstracta.java
+#############################
+./bin/fp2/poo/utilidades/AgendaAbstracta.class: \
+                       ./bin/fp2/poo/utilidades/TelefonoInterfaz.class \
+                       ./bin/fp2/poo/utilidades/ContactoInterfaz.class \
+                       ./bin/fp2/poo/utilidades/Excepciones/OperacionNoPermitidaExcepcion.class \
+                       ./src/fp2/poo/utilidades/AgendaAbstracta.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/utilidades/AgendaAbstracta.java
+
+#############################
+# ContactoInterfaz.java
+#############################
+./bin/fp2/poo/utilidades/ContactoInterfaz.class: \
+                       ./bin/fp2/poo/utilidades/TelefonoInterfaz.class  \
+                       ./bin/fp2/poo/utilidades/PersonaInterfaz.class   \
+                       ./bin/fp2/poo/utilidades/DomicilioInterfaz.class \
+                       ./bin/fp2/poo/utilidades/CorreoElectronicoInterfaz.class \
+                       ./src/fp2/poo/utilidades/ContactoInterfaz.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/utilidades/ContactoInterfaz.java
+
+#############################
+# CorreoElectronicoInterfaz.java      
+#############################
+./bin/fp2/poo/utilidades/CorreoElectronicoInterfaz.class: \
+                       ./bin/fp2/poo/utilidades/Excepciones/CorreoElectronicoIncorrectoExcepcion.class \
+                       ./src/fp2/poo/utilidades/CorreoElectronicoInterfaz.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/utilidades/CorreoElectronicoInterfaz.java
+
+
+#############################
+# DomicilioInterfaz.java
+#############################
+./bin/fp2/poo/utilidades/DomicilioInterfaz.class: \
+                       ./src/fp2/poo/utilidades/DomicilioInterfaz.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/utilidades/DomicilioInterfaz.java
+
+
+#############################
+# PersonaInterfaz.java
+#############################
+./bin/fp2/poo/utilidades/PersonaInterfaz.class: \
+                       ./src/fp2/poo/utilidades/PersonaInterfaz.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/utilidades/PersonaInterfaz.java
+
+
+#############################
+# TelefonoInterfaz.java
+#############################
+./bin/fp2/poo/utilidades/TelefonoInterfaz.class: \
+                       ./bin/fp2/poo/utilidades/Excepciones/TelefonoIncorrectoExcepcion.class \
+                       ./src/fp2/poo/utilidades/TelefonoInterfaz.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/utilidades/TelefonoInterfaz.java
+
+
+##########################################################
+# OperacionNoPermitidaExcepcion.java
+##########################################################
+./bin/fp2/poo/utilidades/Excepciones/OperacionNoPermitidaExcepcion.class: \
+                        ./src/fp2/poo/utilidades/Excepciones/OperacionNoPermitidaExcepcion.java 
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/utilidades/Excepciones/OperacionNoPermitidaExcepcion.java
+
+
+##########################################################
+# TelefonoIncorrectoExcepcion.java
+##########################################################
+./bin/fp2/poo/utilidades/Excepciones/TelefonoIncorrectoExcepcion.class: \
+                             ./src/fp2/poo/utilidades/Excepciones/TelefonoIncorrectoExcepcion.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/utilidades/Excepciones/TelefonoIncorrectoExcepcion.java
+
+##########################################################
+# CorreoElectronicoIncorrectoExcepcion.java
+##########################################################
+./bin/fp2/poo/utilidades/Excepciones/CorreoElectronicoIncorrectoExcepcion.class: \
+                      ./src/fp2/poo/utilidades/Excepciones/CorreoElectronicoIncorrectoExcepcion.java
+	$(JAVAC) $(OPCIONES) ./src/fp2/poo/utilidades/Excepciones/CorreoElectronicoIncorrectoExcepcion.java
+
+
+##########################################################
+# Creacion del jar
+##########################################################
+./jar/Agenda.jar: ./bin/fp2/poo/pfpooadrdelvil1/Contacto.class ./bin/fp2/poo/pfpooadrdelvil1/CorreoElectronico.class ./bin/fp2/poo/pfpooadrdelvil1/Domicilio.class ./bin/fp2/poo/pfpooadrdelvil1/Persona.class ./bin/fp2/poo/pfpooadrdelvil1/Telefono.class ./bin/fp2/poo/pfpooadrdelvil1/OrdenacionNombre.class  ./bin/fp2/poo/pfpooadrdelvil1/OrdenacionCorreo.class  ./bin/fp2/poo/pfpooadrdelvil1/Agenda.class ./bin/fp2/poo/principal/Principal.class ./bin/fp2/poo/utilidades/ContactoInterfaz.class ./bin/fp2/poo/utilidades/CorreoElectronicoInterfaz.class ./bin/fp2/poo/utilidades/DomicilioInterfaz.class ./bin/fp2/poo/utilidades/PersonaInterfaz.class ./bin/fp2/poo/utilidades/TelefonoInterfaz.class ./bin/fp2/poo/utilidades/DatosDeEntrada.class ./bin/fp2/poo/utilidades/AgendaAbstracta.class ./bin/fp2/poo/utilidades/Excepciones/CorreoElectronicoIncorrectoExcepcion.class ./bin/fp2/poo/utilidades/Excepciones/OperacionNoPermitidaExcepcion.class ./bin/fp2/poo/utilidades/Excepciones/TelefonoIncorrectoExcepcion.class 
+	jar cvfe ./jar/Agenda.jar fp2.poo.principal.Principal \
+	-C ./bin fp2/poo/pfpooadrdelvil1/CorreoElectronico.class \
+	-C ./bin fp2/poo/pfpooadrdelvil1/Domicilio.class \
+	-C ./bin fp2/poo/pfpooadrdelvil1/Persona.class \
+	-C ./bin fp2/poo/pfpooadrdelvil1/Telefono.class \
+	-C ./bin fp2/poo/pfpooadrdelvil1/OrdenacionNombre.class \
+	-C ./bin fp2/poo/pfpooadrdelvil1/OrdenacionCorreo.class \
+	-C ./bin fp2/poo/pfpooadrdelvil1/Contacto.class \
+	-C ./bin fp2/poo/pfpooadrdelvil1/Agenda.class \
+	-C ./bin fp2/poo/principal/Principal.class \
+	-C ./bin fp2/poo/utilidades/ContactoInterfaz.class \
+	-C ./bin fp2/poo/utilidades/CorreoElectronicoInterfaz.class \
+	-C ./bin fp2/poo/utilidades/DomicilioInterfaz.class \
+	-C ./bin fp2/poo/utilidades/PersonaInterfaz.class \
+	-C ./bin fp2/poo/utilidades/TelefonoInterfaz.class \
+	-C ./bin fp2/poo/utilidades/DatosDeEntrada.class \
+	-C ./bin fp2/poo/utilidades/AgendaAbstracta.class \
+	-C ./bin fp2/poo/utilidades/Excepciones/CorreoElectronicoIncorrectoExcepcion.class \
+	-C ./bin fp2/poo/utilidades/Excepciones/OperacionNoPermitidaExcepcion.class \
+	-C ./bin fp2/poo/utilidades/Excepciones/TelefonoIncorrectoExcepcion.class
+
+
+
+##########################################################
+# Generacion del jar
+##########################################################
+ejecuta: ./jar/Agenda.jar 
+	java -jar ./jar/Agenda.jar
+
+
+##########################################################
+# Generacion de la documentacion. Javadoc
+##########################################################
+generadoc: 
+	javadoc -encoding ISO-8859-1 -private -charset "UTF-8" -d ./doc/ -classpath ./bin -sourcepath ./src \
+	./src/fp2/poo/pfpooadrdelvil1/CorreoElectronico.java \
+	./src/fp2/poo/pfpooadrdelvil1/Domicilio.java \
+	./src/fp2/poo/pfpooadrdelvil1/Persona.java \
+	./src/fp2/poo/pfpooadrdelvil1/Telefono.java \
+	./src/fp2/poo/pfpooadrdelvil1/OrdenacionNombre.java \
+	./src/fp2/poo/pfpooadrdelvil1/OrdenacionCorreo.java \
+	./src/fp2/poo/pfpooadrdelvil1/Contacto.java \
+	./src/fp2/poo/pfpooadrdelvil1/Agenda.java \
+	./src/fp2/poo/principal/Principal.java \
+	./src/fp2/poo/utilidades/ContactoInterfaz.java \
+	./src/fp2/poo/utilidades/CorreoElectronicoInterfaz.java \
+	./src/fp2/poo/utilidades/DomicilioInterfaz.java \
+	./src/fp2/poo/utilidades/PersonaInterfaz.java \
+	./src/fp2/poo/utilidades/TelefonoInterfaz.java \
+	./src/fp2/poo/utilidades/DatosDeEntrada.java \
+	./src/fp2/poo/utilidades/AgendaAbstracta.java \
+	./src/fp2/poo/utilidades/Excepciones/CorreoElectronicoIncorrectoExcepcion.java \
+	./src/fp2/poo/utilidades/Excepciones/OperacionNoPermitidaExcepcion.java \
+	./src/fp2/poo/utilidades/Excepciones/TelefonoIncorrectoExcepcion.java
+
+prueba00:
+	$(JAVAC) $(OPCIONES)  ./src/fp2/poo/principal/Principal.java
+	java  -classpath ./bin -cp bin fp2.poo.principal.Principal agenda00	
